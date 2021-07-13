@@ -23,7 +23,7 @@ public class AirlineView {
 		}	
 	}
 	
-	public String printDay(String Day, int Time) {
+	public String printDayAndTime(String Day, int Time) {
 		
 		ArrayList<Airline> result = findByDayAndTime(Day, Time);
 		for (Airline element: result) {
