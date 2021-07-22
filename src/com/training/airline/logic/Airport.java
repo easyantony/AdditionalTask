@@ -23,11 +23,11 @@ public class Airport {
 		airlines.add(a);
 	}
 	
-	public static ArrayList<Airline> findByDestination(String Destination){
+	public static ArrayList<Airline> findByDestination(String destination){
 		ArrayList<Airline> result = new ArrayList<Airline>();
 		
 		for (Airline a : airlines) {
-			if(a.getDestination().equals(Destination)) {
+			if(a.getdestination().equals(destination)) {
 				result.add(a);
 			}
 		}
@@ -35,11 +35,11 @@ public class Airport {
 		return result;
 	}
 	
-	public static ArrayList<Airline> findByDay(String Day){
+	public static ArrayList<Airline> findByDay(String day){
 		ArrayList<Airline> result = new ArrayList<Airline>();
 		
 		for (Airline a : airlines) {
-			if(a.getDay().equals(Day)) {
+			if(a.getday().equals(day)) {
 				result.add(a);
 			}
 		}
@@ -47,11 +47,11 @@ public class Airport {
 		return result;
 	}
 	
-	public static ArrayList<Airline> findByDayAndTime(String Day, int Time){
+	public static ArrayList<Airline> findByDayAndTime(String day, int time){
 		ArrayList<Airline> result = new ArrayList<Airline>();
 		
 		for (Airline a : airlines) {
-			if(a.getDay().equals(Day) & a.getTime() < Time) {
+			if(a.getday().equals(day) & a.gettime() < time) {
 				result.add(a);
 			}
 		}
