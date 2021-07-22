@@ -6,27 +6,27 @@ import com.training.airline.logic.*;
 
 public class AirlineView {
 	
-	public static void print(String Destination) {
+	public static void print(String destination) {
 		
-		ArrayList<Airline> result = Airport.findByDestination(Destination);
+		ArrayList<Airline> result = Airport.findByDestination(destination);
 		for (Airline element: result) {
 			System.out.println(element);
 		}
 	}
 	
 
-	public static void printDay(String Day) {
+	public static void printDay(String day) {
 		
-		ArrayList<Airline> result = Airport.findByDay(Day) ;
+		ArrayList<Airline> result = Airport.findByDay(day) ;
 		for (Airline element: result) {
 			System.out.println(element);
 		
 		}	
 	}
 	
-	public static void printDayAndTime(String Day, int Time) {
+	public static void printDayAndTime(String day, int time) {
 		
-		ArrayList<Airline> result = Airport.findByDayAndTime(Day,Time);
+		ArrayList<Airline> result = Airport.findByDayAndTime(day,time);
 		for (Airline element: result) {
 			System.out.println(element);
 		
