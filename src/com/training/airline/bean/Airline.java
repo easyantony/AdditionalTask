@@ -2,70 +2,70 @@ package com.training.airline.bean;
 
 public class Airline {
 	
-	private String Destination;
-	private String Day;
-	private String AircraftType;
-	private String FlightNumber;
-	private int Time;
+	private String destination;
+	private String day;
+	private String aircraftType;
+	private String flightNumber;
+	private int time;
 	
-	public Airline (String Destination, String Day, String AircraftType, String FlightNumber, int Time) {
+	public Airline (String destination, String day, String aircraftType, String flightNumber, int time) {
 		
-		this.Destination = Destination;
-		this.AircraftType = AircraftType;
-		this.Day = Day;
-		this.FlightNumber = FlightNumber;
-		this.Time = Time;
+		this.destination = destination;
+		this.aircraftType = aircraftType;
+		this.day = day;
+		this.flightNumber = flightNumber;
+		this.time = time;
 	}
 
 	public String getDestination() {
-		return Destination;
+		return destination;
 	}
 
 	public void setDestination(String destination) {
-		Destination = destination;
+		destination = destination;
 	}
 
 	public String getDay() {
-		return Day;
+		return day;
 	}
 
 	public void setDay(String day) {
-		Day = day;
+		day = day;
 	}
 
 	public String getAircraftType() {
-		return AircraftType;
+		return aircraftType;
 	}
 
 	public void setAircraftType(String aircraftType) {
-		AircraftType = aircraftType;
+		aircraftType = aircraftType;
 	}
 
 	public String getFlightNumber() {
-		return FlightNumber;
+		return flightNumber;
 	}
 
 	public void setFlightNumber(String flightNumber) {
-		FlightNumber = flightNumber;
+		flightNumber = flightNumber;
 	}
 
 	public int getTime() {
-		return Time;
+		return time;
 	}
 
 	public void setTime(int time) {
-		Time = time;
+		time = time;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((AircraftType == null) ? 0 : AircraftType.hashCode());
-		result = prime * result + ((Day == null) ? 0 : Day.hashCode());
-		result = prime * result + ((Destination == null) ? 0 : Destination.hashCode());
-		result = prime * result + ((FlightNumber == null) ? 0 : FlightNumber.hashCode());
-		result = prime * result + Time;
+		result = prime * result + ((aircraftType == null) ? 0 : aircraftType.hashCode());
+		result = prime * result + ((day == null) ? 0 : day.hashCode());
+		result = prime * result + ((destination == null) ? 0 : destination.hashCode());
+		result = prime * result + ((flightNumber == null) ? 0 : flightNumber.hashCode());
+		result = prime * result + time;
 		return result;
 	}
 
@@ -78,35 +78,35 @@ public class Airline {
 		if (getClass() != obj.getClass())
 			return false;
 		Airline other = (Airline) obj;
-		if (AircraftType == null) {
-			if (other.AircraftType != null)
+		if (aircraftType == null) {
+			if (other.aircraftType != null)
 				return false;
-		} else if (!AircraftType.equals(other.AircraftType))
+		} else if (!aircraftType.equals(other.aircraftType))
 			return false;
-		if (Day == null) {
-			if (other.Day != null)
+		if (day == null) {
+			if (other.day != null)
 				return false;
-		} else if (!Day.equals(other.Day))
+		} else if (!day.equals(other.day))
 			return false;
-		if (Destination == null) {
-			if (other.Destination != null)
+		if (destination == null) {
+			if (other.destination != null)
 				return false;
-		} else if (!Destination.equals(other.Destination))
+		} else if (!destination.equals(other.destination))
 			return false;
-		if (FlightNumber == null) {
-			if (other.FlightNumber != null)
+		if (flightNumber == null) {
+			if (other.flightNumber != null)
 				return false;
-		} else if (!FlightNumber.equals(other.FlightNumber))
+		} else if (!flightNumber.equals(other.flightNumber))
 			return false;
-		if (Time != other.Time)
+		if (time != other.time)
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Airline [Destination=" + Destination + ", Day=" + Day + ", AircraftType=" + AircraftType
-				+ ", FlightNumber=" + FlightNumber + ", Time=" + Time + "]";
+		return "Airline [destination=" + destination + ", day=" + day + ", aircraftType=" + aircraftType
+				+ ", flightNumber=" + flightNumber + ", time=" + time + "]";
 	}
 
 	
